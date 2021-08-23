@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:simple_resume_app/screens/resume_screens/resumeScreenSecond.dart';
 import 'package:simple_resume_app/screens/resume_screens/resume_screen_one.dart';
+import 'package:simple_resume_app/screens/resume_screens/resume_screen_third.dart';
+
+import 'resume_screens/resume_screen_five.dart';
+import 'resume_screens/resume_screen_four.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -58,8 +62,40 @@ class HomeScreen extends StatelessWidget {
                     ),
                     backgroundColor: MaterialStateProperty.all(Colors.redAccent)
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (_)=>ResumeScreenThird()));
+                },
                 child: Text("Show resume 3",style: TextStyle(color: Colors.white),)),
+            SizedBox(height: 5,),
+            OutlinedButton(
+                style: ButtonStyle(
+                    shape: MaterialStateProperty.all(
+                      RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(30.0),
+                          side:BorderSide(color: Colors.teal,width: 5,style: BorderStyle.solid)
+                      ),
+                    ),
+                    backgroundColor: MaterialStateProperty.all(Colors.deepPurple)
+                ),
+                onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (_)=>ResumeScreenFour()));
+                },
+                child: Text("Show resume 4",style: TextStyle(color: Colors.white),)),
+            SizedBox(height: 5,),
+            OutlinedButton(
+                style: ButtonStyle(
+                    shape: MaterialStateProperty.all(
+                      RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(30.0),
+                          side:BorderSide(color: Colors.teal,width: 5,style: BorderStyle.solid)
+                      ),
+                    ),
+                    backgroundColor: MaterialStateProperty.all(Colors.yellowAccent)
+                ),
+                onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (_)=>ResumeScreenFive()));
+                },
+                child: Text("Show resume 5",style: TextStyle(color: Colors.white),)),
           ],
         ),
       ),

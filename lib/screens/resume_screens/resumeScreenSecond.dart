@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:percent_indicator/circular_percent_indicator.dart';
 
 class ResumeScreenSecond extends StatelessWidget {
@@ -55,7 +56,7 @@ class ResumeScreenSecond extends StatelessWidget {
               children: [
                 Text(
                   "Amanda Smith",
-                  style: TextStyle(
+                  style: GoogleFonts.zillaSlab(
                       color: Colors.white,
                       fontWeight: FontWeight.bold,
                       decoration: TextDecoration.underline,
@@ -69,10 +70,13 @@ class ResumeScreenSecond extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text(
-                  "MERN FullStack Developer",
-                  style: TextStyle(
-                      color: Colors.white, letterSpacing: 1.1, fontSize: 13),
+                SizedBox(
+                  height: 30,
+                  child: Text(
+                    "MERN FullStack Developer",
+                    style: GoogleFonts.zillaSlab(
+                        color: Colors.white, letterSpacing: 1.1, fontSize: 13),
+                  ),
                 ),
               ],
             ),
@@ -96,7 +100,7 @@ class ResumeScreenSecond extends StatelessWidget {
                       ),
                       Text(
                         "About Me",
-                        style: TextStyle(color: Colors.white, fontSize: 18),
+                        style: GoogleFonts.zillaSlab(color: Colors.white, fontSize: 18),
                       ),
                     ],
                   ),
@@ -108,10 +112,10 @@ class ResumeScreenSecond extends StatelessWidget {
                     height: 20,
                   ),
                   Padding(
-                    padding: const EdgeInsets.only(left: 10),
+                    padding: const EdgeInsets.only(left: 10,right: 10),
                     child: Container(
                       width: MediaQuery.of(context).size.width - 20,
-                      height: 180,
+                      height: 250,
                       decoration: BoxDecoration(
                         border: Border.all(width: 1, color: Colors.white),
                         borderRadius: BorderRadius.all(Radius.circular(
@@ -119,14 +123,14 @@ class ResumeScreenSecond extends StatelessWidget {
                             ),
                       ),
                       child: Padding(
-                        padding: const EdgeInsets.all(5.0),
+                        padding: const EdgeInsets.all(10.0),
                         child: Text(
                           "Over 6 years of strong experience as Full Stack web developer with solid understanding of front - end technologies, "
                           "MVC frameworks, Restful web services and Data Base designing."
                           " Strong knowledge in MERN/MEAN Stack with vast experience in building Web Applications, used React.Over 6 years of strong experience as Full Stack web developer with solid understanding of front - end technologies, "
                           "MVC frameworks, Restful web services and Data Base designing. Strong knowledge in MERN/MEAN Stack with vast experience in building Web Applications, used React.Over 6 years of strong "
                           " as Full Stack web developer with solid understanding of front - end technologies, MVC frameworks, Restful web services and Data Base designing.",
-                          style: TextStyle(fontSize: 13, color: Colors.white),
+                          style: GoogleFonts.zillaSlab(fontSize: 13, color: Colors.white),
                         ),
                       ),
                     ),
@@ -156,7 +160,7 @@ class ResumeScreenSecond extends StatelessWidget {
                       ),
                       Text(
                         "Contact Me",
-                        style: TextStyle(color: Colors.white, fontSize: 18),
+                        style: GoogleFonts.zillaSlab(color: Colors.white, fontSize: 18),
                       ),
                     ],
                   ),
@@ -190,7 +194,7 @@ class ResumeScreenSecond extends StatelessWidget {
                                 ),
                                 Text(
                                   "+91 7999999999",
-                                  style: TextStyle(
+                                  style: GoogleFonts.zillaSlab(
                                       color: Colors.white, fontSize: 15),
                                 )
                               ],
@@ -208,7 +212,7 @@ class ResumeScreenSecond extends StatelessWidget {
                                 ),
                                 Text(
                                   "https://github.com/ajumon",
-                                  style: TextStyle(
+                                  style: GoogleFonts.zillaSlab(
                                       color: Colors.white, fontSize: 15),
                                 )
                               ],
@@ -226,7 +230,7 @@ class ResumeScreenSecond extends StatelessWidget {
                                 ),
                                 Text(
                                   "abcdefghi1881@gmail.com",
-                                  style: TextStyle(
+                                  style: GoogleFonts.zillaSlab(
                                       color: Colors.white, fontSize: 15),
                                 )
                               ],
@@ -244,7 +248,7 @@ class ResumeScreenSecond extends StatelessWidget {
                                 ),
                                 Text(
                                   "https://facebook.com/ajjjjjas",
-                                  style: TextStyle(
+                                  style: GoogleFonts.zillaSlab(
                                       color: Colors.white, fontSize: 15),
                                 )
                               ],
@@ -262,7 +266,7 @@ class ResumeScreenSecond extends StatelessWidget {
                                 ),
                                 Text(
                                   'https://google.com/',
-                                  style: TextStyle(
+                                  style: GoogleFonts.zillaSlab(
                                       color: Colors.white, fontSize: 15),
                                 )
                               ],
@@ -296,7 +300,7 @@ class ResumeScreenSecond extends StatelessWidget {
                       ),
                       Text(
                         "Awards",
-                        style: TextStyle(color: Colors.white, fontSize: 18),
+                        style: GoogleFonts.zillaSlab(color: Colors.white, fontSize: 18),
                       ),
                     ],
                   ),
@@ -315,7 +319,7 @@ class ResumeScreenSecond extends StatelessWidget {
                           ),
                           title: Text(
                             "Graphic Design Award",
-                            style: TextStyle(color: Colors.white, fontSize: 16),
+                            style: GoogleFonts.zillaSlab(color: Colors.white, fontSize: 16),
                           ),
                         ),
                         ListTile(
@@ -326,7 +330,7 @@ class ResumeScreenSecond extends StatelessWidget {
                           ),
                           title: Text(
                             "UI/UX Design Award",
-                            style: TextStyle(color: Colors.white, fontSize: 16),
+                            style: GoogleFonts.zillaSlab(color: Colors.white, fontSize: 16),
                           ),
                         ),
                         ListTile(
@@ -337,7 +341,7 @@ class ResumeScreenSecond extends StatelessWidget {
                           ),
                           title: Text(
                             "Design Award",
-                            style: TextStyle(color: Colors.white, fontSize: 16),
+                            style: GoogleFonts.zillaSlab(color: Colors.white, fontSize: 16),
                           ),
                         ),
                       ],
@@ -368,7 +372,7 @@ class ResumeScreenSecond extends StatelessWidget {
                       ),
                       Text(
                         "Education",
-                        style: TextStyle(color: Colors.white, fontSize: 18),
+                        style: GoogleFonts.zillaSlab(color: Colors.white, fontSize: 18),
                       ),
                     ],
                   ),
@@ -401,13 +405,13 @@ class ResumeScreenSecond extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       SizedBox(width: 20,),
-                      Text("2015 - 2016",style: TextStyle(color: Colors.white,fontSize:17 )),
+                      Text("2015 - 2016",style: GoogleFonts.zillaSlab(color: Colors.white,fontSize:17 )),
                       SizedBox(width: 20,),
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text("Ryerson University, Toronto",style: TextStyle(color: Colors.white,fontSize:17 ),),
-                          Text("Master of Computer Applications",style: TextStyle(color: Colors.white,fontSize:13 ))
+                          Text("Ryerson University, Toronto",style: GoogleFonts.zillaSlab(color: Colors.white,fontSize:17 ),),
+                          Text("Master of Computer Applications",style: GoogleFonts.zillaSlab(color: Colors.white,fontSize:13 ))
                         ],
                       )
                     ],
@@ -417,13 +421,13 @@ class ResumeScreenSecond extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       SizedBox(width: 20,),
-                      Text("2014 - 2015",style: TextStyle(color: Colors.white,fontSize:17 )),
+                      Text("2014 - 2015",style: GoogleFonts.zillaSlab(color: Colors.white,fontSize:17 )),
                       SizedBox(width: 20,),
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text("Ryerson University, Toronto",style: TextStyle(color: Colors.white,fontSize:17 ),),
-                          Text("Full Stack App Development",style: TextStyle(color: Colors.white,fontSize:13 ))
+                          Text("Ryerson University, Toronto",style: GoogleFonts.zillaSlab(color: Colors.white,fontSize:17 ),),
+                          Text("Full Stack App Development",style: GoogleFonts.zillaSlab(color: Colors.white,fontSize:13 ))
                         ],
                       )
                     ],
@@ -450,7 +454,7 @@ class ResumeScreenSecond extends StatelessWidget {
                       ),
                       Text(
                         "Experience",
-                        style: TextStyle(color: Colors.white, fontSize: 18),
+                        style: GoogleFonts.zillaSlab(color: Colors.white, fontSize: 18),
                       ),
                     ],
                   ),
@@ -484,13 +488,13 @@ class ResumeScreenSecond extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       SizedBox(width: 20,),
-                      Text("2016 - 2018",style: TextStyle(color: Colors.white,fontSize:17 )),
+                      Text("2016 - 2018",style: GoogleFonts.zillaSlab(color: Colors.white,fontSize:17 )),
                       SizedBox(width: 20,),
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text("Xywlems, Toronto",style: TextStyle(color: Colors.white,fontSize:17 ),),
-                          Text("Ecommerce web development",style: TextStyle(color: Colors.white,fontSize:13 ))
+                          Text("Xywlems, Toronto",style: GoogleFonts.zillaSlab(color: Colors.white,fontSize:17 ),),
+                          Text("Ecommerce web development",style: GoogleFonts.zillaSlab(color: Colors.white,fontSize:13 ))
                         ],
                       )
                     ],
@@ -500,13 +504,13 @@ class ResumeScreenSecond extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       SizedBox(width: 20,),
-                      Text("2018 - 2020",style: TextStyle(color: Colors.white,fontSize:17 )),
+                      Text("2018 - 2020",style: GoogleFonts.zillaSlab(color: Colors.white,fontSize:17 )),
                       SizedBox(width: 20,),
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text("IBS, Toronto",style: TextStyle(color: Colors.white,fontSize:17 ),),
-                          Text("MERN stack developer",style: TextStyle(color: Colors.white,fontSize:13 ))
+                          Text("IBS, Toronto",style: GoogleFonts.zillaSlab(color: Colors.white,fontSize:17 ),),
+                          Text("MERN stack developer",style: GoogleFonts.zillaSlab(color: Colors.white,fontSize:13 ))
                         ],
                       )
                     ],
@@ -516,13 +520,13 @@ class ResumeScreenSecond extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       SizedBox(width: 20,),
-                      Text("2020 - 2021",style: TextStyle(color: Colors.white,fontSize:17 )),
+                      Text("2020 - 2021",style: GoogleFonts.zillaSlab(color: Colors.white,fontSize:17 )),
                       SizedBox(width: 20,),
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text("Ryerson University, Toronto",style: TextStyle(color: Colors.white,fontSize:17 ),),
-                          Text("Web service",style: TextStyle(color: Colors.white,fontSize:13 ))
+                          Text("Ryerson University, Toronto",style: GoogleFonts.zillaSlab(color: Colors.white,fontSize:17 ),),
+                          Text("Web service",style: GoogleFonts.zillaSlab(color: Colors.white,fontSize:13 ))
                         ],
                       )
                     ],
@@ -551,7 +555,7 @@ class ResumeScreenSecond extends StatelessWidget {
                       ),
                       Text(
                         "Skills",
-                        style: TextStyle(color: Colors.white, fontSize: 18),
+                        style: GoogleFonts.zillaSlab(color: Colors.white, fontSize: 18),
                       ),
                     ],
                   ),
@@ -581,12 +585,12 @@ class ResumeScreenSecond extends StatelessWidget {
                         center: new Text(
                           "90.0%",
                           style:
-                          new TextStyle(fontWeight: FontWeight.bold, fontSize: 18.0,color: Colors.white),
+                          GoogleFonts.zillaSlab(fontWeight: FontWeight.bold, fontSize: 18.0,color: Colors.white),
                         ),
                         footer: new Text(
                           "Html",
                           style:
-                          new TextStyle(fontWeight: FontWeight.bold, fontSize: 16.0,color: Colors.white),
+                        GoogleFonts.zillaSlab(fontWeight: FontWeight.bold, fontSize: 16.0,color: Colors.white),
                         ),
                         circularStrokeCap: CircularStrokeCap.round,
                         progressColor: Colors.deepOrange,
@@ -599,12 +603,12 @@ class ResumeScreenSecond extends StatelessWidget {
                         center: new Text(
                           "75.0%",
                           style:
-                          new TextStyle(fontWeight: FontWeight.bold, fontSize: 18.0,color: Colors.white),
+                          GoogleFonts.zillaSlab(fontWeight: FontWeight.bold, fontSize: 18.0,color: Colors.white),
                         ),
                         footer: new Text(
                           "CSS",
                           style:
-                          new TextStyle(fontWeight: FontWeight.bold, fontSize: 16.0,color: Colors.white),
+                          GoogleFonts.zillaSlab(fontWeight: FontWeight.bold, fontSize: 16.0,color: Colors.white),
                         ),
                         circularStrokeCap: CircularStrokeCap.round,
                         progressColor: Colors.greenAccent,
@@ -617,12 +621,12 @@ class ResumeScreenSecond extends StatelessWidget {
                         center: new Text(
                           "80.0%",
                           style:
-                          new TextStyle(fontWeight: FontWeight.bold, fontSize: 18.0,color: Colors.white),
+                          GoogleFonts.zillaSlab(fontWeight: FontWeight.bold, fontSize: 18.0,color: Colors.white),
                         ),
                         footer: new Text(
                           "Java Script",
                           style:
-                          new TextStyle(fontWeight: FontWeight.bold, fontSize: 16.0,color: Colors.white),
+                          GoogleFonts.zillaSlab(fontWeight: FontWeight.bold, fontSize: 16.0,color: Colors.white),
                         ),
                         circularStrokeCap: CircularStrokeCap.round,
                         progressColor: Colors.purple,
@@ -640,12 +644,12 @@ class ResumeScreenSecond extends StatelessWidget {
                         center: new Text(
                           "70.0%",
                           style:
-                          new TextStyle(fontWeight: FontWeight.bold, fontSize: 18.0,color: Colors.white),
+                          GoogleFonts.zillaSlab(fontWeight: FontWeight.bold, fontSize: 18.0,color: Colors.white),
                         ),
                         footer: new Text(
                           "MERN",
                           style:
-                          new TextStyle(fontWeight: FontWeight.bold, fontSize: 16.0,color: Colors.white),
+                          GoogleFonts.zillaSlab(fontWeight: FontWeight.bold, fontSize: 16.0,color: Colors.white),
                         ),
                         circularStrokeCap: CircularStrokeCap.round,
                         progressColor: Colors.yellowAccent,
@@ -658,12 +662,12 @@ class ResumeScreenSecond extends StatelessWidget {
                         center: new Text(
                           "75.0%",
                           style:
-                          new TextStyle(fontWeight: FontWeight.bold, fontSize: 18.0,color: Colors.white),
+                          GoogleFonts.zillaSlab(fontWeight: FontWeight.bold, fontSize: 18.0,color: Colors.white),
                         ),
                         footer: new Text(
                           "Git & GitHub",
                           style:
-                          new TextStyle(fontWeight: FontWeight.bold, fontSize: 16.0,color: Colors.white),
+                          GoogleFonts.zillaSlab(fontWeight: FontWeight.bold, fontSize: 16.0,color: Colors.white),
                         ),
                         circularStrokeCap: CircularStrokeCap.round,
                         progressColor: Colors.lightBlue,
@@ -676,12 +680,12 @@ class ResumeScreenSecond extends StatelessWidget {
                         center: new Text(
                           "50.0%",
                           style:
-                          new TextStyle(fontWeight: FontWeight.bold, fontSize: 18.0,color: Colors.white),
+                          GoogleFonts.zillaSlab(fontWeight: FontWeight.bold, fontSize: 18.0,color: Colors.white),
                         ),
                         footer:  Text(
                           "Vue.js",
                           style:
-                           TextStyle(fontWeight: FontWeight.bold, fontSize: 16.0,color: Colors.white),
+                          GoogleFonts.zillaSlab(fontWeight: FontWeight.bold, fontSize: 16.0,color: Colors.white),
                         ),
                         circularStrokeCap: CircularStrokeCap.round,
                         progressColor: Colors.redAccent,
