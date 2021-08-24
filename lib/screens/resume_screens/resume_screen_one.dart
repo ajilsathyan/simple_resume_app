@@ -5,7 +5,6 @@ import 'package:percent_indicator/circular_percent_indicator.dart';
 import 'package:percent_indicator/linear_percent_indicator.dart';
 
 class ResumeScreenOne extends StatelessWidget {
-  const ResumeScreenOne({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -24,7 +23,7 @@ class ResumeScreenOne extends StatelessWidget {
                     "AJIL SATHYAN",
                     style:GoogleFonts.zillaSlab(
                         fontWeight: FontWeight.bold,
-                        fontSize: 34,
+                        fontSize: 30,
                         color: Colors.white),
                   ),
                 ),
@@ -65,17 +64,17 @@ class ResumeScreenOne extends StatelessWidget {
                               height: 50,
                             ),
                             Padding(
-                              padding: const EdgeInsets.all(5.0),
+                              padding: const EdgeInsets.only(left: 10,right: 5,top: 5),
                               child: Text(
                                 "About",
                                 style: GoogleFonts.zillaSlab(
                                     fontWeight: FontWeight.bold,
-                                    fontSize: 20,
+                                    fontSize: 17,
                                     color: Colors.white),
                               ),
                             ),
                             Padding(
-                              padding: const EdgeInsets.all(10.0),
+                              padding: const EdgeInsets.symmetric(horizontal: 25,vertical: 10),
                               child: Text(
                                 "Full Stack Flutter Developer with 6- months experience building and maintaining responsive flutter apps. Mostly interested in Flutter App development.Full Stack Flutter Developer with 6- months experience building and maintaining responsive flutter apps. Mostly interested in Flutter App development.  ",
                                 style:GoogleFonts.zillaSlab(
@@ -104,13 +103,40 @@ class ResumeScreenOne extends StatelessWidget {
                 ),
                 Padding(
                   padding: const EdgeInsets.all(5.0),
-                  child: Text(
-                    "Contact",
-                    style: GoogleFonts.zillaSlab(fontSize: 20, color: Colors.white,fontWeight: FontWeight.bold),
+                  child: Row(
+                    children: [
+                      Container(
+
+                        child: Row(
+                          children: [
+                            SizedBox(width: 30,),
+                            Text(
+                              "Contact",
+                              style: GoogleFonts.zillaSlab(fontSize: 16, color: Colors.white,fontWeight: FontWeight.bold),
+                            ),
+                          ],
+                        ),
+                        width: 200,
+                        height: 35,
+                        decoration: BoxDecoration(
+                            color: Colors.black,
+                            borderRadius: BorderRadius.all(Radius.circular(20.0))
+                        ),
+                      ),
+                      Expanded(
+                        child: Divider(
+                          color: Colors.purple,
+                          thickness: 3,
+                        ),
+                      )
+                    ],
                   ),
                 ),
+                SizedBox(
+                  height: 10,
+                ),
                 Padding(
-                  padding: const EdgeInsets.all(5.0),
+                  padding: const EdgeInsets.symmetric(horizontal: 10,vertical: 5),
                   child: Container(
                     height: 40,
                     decoration: BoxDecoration(
@@ -119,11 +145,11 @@ class ResumeScreenOne extends StatelessWidget {
                     child: Row(
                       children: [
                         SizedBox(
-                          width: 5,
+                          width: 10,
                         ),
                         Icon(Icons.email),
                         SizedBox(
-                          width: 5,
+                          width: 10,
                         ),
                         Text(
                           "ajilsathyan199983@gmail.com",
@@ -134,7 +160,7 @@ class ResumeScreenOne extends StatelessWidget {
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.all(5.0),
+                  padding: const EdgeInsets.symmetric(horizontal: 10,vertical: 5),
                   child: Container(
                     height: 40,
                     decoration: BoxDecoration(
@@ -143,11 +169,11 @@ class ResumeScreenOne extends StatelessWidget {
                     child: Row(
                       children: [
                         SizedBox(
-                          width: 5,
+                          width: 10,
                         ),
                         Icon(Icons.call),
                         SizedBox(
-                          width: 5,
+                          width: 10,
                         ),
                         Text(
                           "+91 7999999999",
@@ -158,7 +184,7 @@ class ResumeScreenOne extends StatelessWidget {
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.all(5.0),
+                  padding: const EdgeInsets.symmetric(horizontal: 10,vertical: 5),
                   child: Container(
                     height: 40,
                     decoration: BoxDecoration(
@@ -167,13 +193,13 @@ class ResumeScreenOne extends StatelessWidget {
                     child: Row(
                       children: [
                         SizedBox(
-                          width: 5,
+                          width: 10,
                         ),
                         FaIcon(
                           FontAwesomeIcons.git,
                         ),
                         SizedBox(
-                          width: 5,
+                          width: 10,
                         ),
                         Text(
                           "https://github.com/ajilsathyan",
@@ -184,7 +210,7 @@ class ResumeScreenOne extends StatelessWidget {
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.all(5.0),
+                  padding: const EdgeInsets.symmetric(horizontal: 10,vertical: 5),
                   child: Container(
                     height: 40,
                     decoration: BoxDecoration(
@@ -193,14 +219,14 @@ class ResumeScreenOne extends StatelessWidget {
                     child: Row(
                       children: [
                         SizedBox(
-                          width: 5,
+                          width: 10,
                         ),
                         FaIcon(FontAwesomeIcons.linkedinIn),
                         SizedBox(
-                          width: 5,
+                          width: 10,
                         ),
                         Text(
-                          "https://in.linkedin.com/in/ajil-sathyan-0b11001b6",
+                          "https://in.linkedin.com/in/ajil-sathyan",
                           style: GoogleFonts.zillaSlab(fontSize: 13, color: Colors.white),
                         ),
                       ],
@@ -208,7 +234,7 @@ class ResumeScreenOne extends StatelessWidget {
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.all(5.0),
+                  padding: const EdgeInsets.symmetric(horizontal: 10,vertical: 5),
                   child: Container(
                     height: 40,
                     decoration: BoxDecoration(
@@ -217,11 +243,11 @@ class ResumeScreenOne extends StatelessWidget {
                     child: Row(
                       children: [
                         SizedBox(
-                          width: 5,
+                          width: 10,
                         ),
                         Icon(Icons.launch),
                         SizedBox(
-                          width: 5,
+                          width: 10,
                         ),
                         Text(
                           "https://ajilsathyan.github.io/Ajil-s-Web-",
@@ -231,14 +257,41 @@ class ResumeScreenOne extends StatelessWidget {
                     ),
                   ),
                 ),
+                SizedBox(
+                  height: 10,
+                ),
                 Padding(
                   padding: const EdgeInsets.all(5.0),
-                  child: Text(
-                    "Languages",
-                    style: GoogleFonts.zillaSlab(fontSize: 20, color: Colors.white,fontWeight: FontWeight.bold),
+                  child: Row(
+                    children: [
+                      Container(
+
+                        child: Row(
+                          children: [
+                            SizedBox(width: 30,),
+                            Text(
+                              "Languages",
+                              style: GoogleFonts.zillaSlab(fontSize: 16, color: Colors.white,fontWeight: FontWeight.bold),
+                            ),
+                          ],
+                        ),
+                        width: 200,
+                        height: 35,
+                        decoration: BoxDecoration(
+                            color: Colors.black,
+                            borderRadius: BorderRadius.all(Radius.circular(20.0))
+                        ),
+                      ),
+                      Expanded(
+                        child: Divider(
+                          color: Colors.purple,
+                          thickness: 3,
+                        ),
+                      )
+                    ],
                   ),
                 ),
-                Padding(padding: EdgeInsets.only(left: 15,top: 10,bottom: 20)
+                Padding(padding: EdgeInsets.only(left: 15,top: 10,bottom: 20,right: 10)
                   ,child: Row(
                   children: [
                     Text("Malayalam", style: GoogleFonts.zillaSlab(fontSize: 15, color: Colors.white),),
@@ -256,7 +309,7 @@ class ResumeScreenOne extends StatelessWidget {
 
                   ],
                 ),),
-                Padding(padding: EdgeInsets.only(left: 15,top: 10,bottom: 20),
+                Padding(padding: EdgeInsets.only(left: 15,top: 10,bottom: 20,right: 10),
                   child: Row(
                   children: [
                     Text("English", style: GoogleFonts.zillaSlab(fontSize: 15, color: Colors.white),),
@@ -274,7 +327,7 @@ class ResumeScreenOne extends StatelessWidget {
 
                   ],
                 ),),
-                Padding(padding: EdgeInsets.only(left: 15,top: 10,bottom: 20),
+                Padding(padding: EdgeInsets.only(left: 15,top: 10,bottom: 20,right: 10),
                   child: Row(
                   children: [
                     Text("Hindi", style: GoogleFonts.zillaSlab(fontSize: 15, color: Colors.white),),
@@ -304,23 +357,23 @@ class ResumeScreenOne extends StatelessWidget {
                             SizedBox(width: 30,),
                             Text(
                               "Education",
-                              style: GoogleFonts.zillaSlab(fontSize: 20, color: Colors.white,fontWeight: FontWeight.bold),
+                              style: GoogleFonts.zillaSlab(fontSize: 16, color: Colors.white,fontWeight: FontWeight.bold),
                             ),
                           ],
                         ),
                         width: 200,
-                        height: 40,
+                        height: 35,
                         decoration: BoxDecoration(
-                          color: Colors.black,
+                            color: Colors.black,
                             borderRadius: BorderRadius.all(Radius.circular(20.0))
                         ),
                       ),
-                     Expanded(
-                       child: Divider(
+                      Expanded(
+                        child: Divider(
                           color: Colors.purple,
                           thickness: 3,
                         ),
-                     )
+                      )
                     ],
                   ),
                 ),
@@ -457,12 +510,12 @@ class ResumeScreenOne extends StatelessWidget {
                             SizedBox(width: 30,),
                             Text(
                               "Experience",
-                              style: GoogleFonts.zillaSlab(fontSize: 20, color: Colors.white,fontWeight: FontWeight.bold),
+                              style: GoogleFonts.zillaSlab(fontSize: 16, color: Colors.white,fontWeight: FontWeight.bold),
                             ),
                           ],
                         ),
                         width: 200,
-                        height: 40,
+                        height: 35,
                         decoration: BoxDecoration(
                             color: Colors.black,
                             borderRadius: BorderRadius.all(Radius.circular(20.0))
@@ -573,12 +626,12 @@ class ResumeScreenOne extends StatelessWidget {
                             SizedBox(width: 30,),
                             Text(
                               "Skills",
-                              style: GoogleFonts.zillaSlab(fontSize: 20, color: Colors.white,fontWeight: FontWeight.bold),
+                              style: GoogleFonts.zillaSlab(fontSize: 16, color: Colors.white,fontWeight: FontWeight.bold),
                             ),
                           ],
                         ),
                         width: 200,
-                        height: 40,
+                        height: 35,
                         decoration: BoxDecoration(
                             color: Colors.black,
                             borderRadius: BorderRadius.all(Radius.circular(20.0))
@@ -752,12 +805,12 @@ class ResumeScreenOne extends StatelessWidget {
                             SizedBox(width: 30,),
                             Text(
                               "Hobbies",
-                              style: GoogleFonts.zillaSlab(fontSize: 20, color: Colors.white,fontWeight: FontWeight.bold),
+                              style: GoogleFonts.zillaSlab(fontSize: 16, color: Colors.white,fontWeight: FontWeight.bold),
                             ),
                           ],
                         ),
                         width: 200,
-                        height: 40,
+                        height: 35,
                         decoration: BoxDecoration(
                             color: Colors.black,
                             borderRadius: BorderRadius.all(Radius.circular(20.0))

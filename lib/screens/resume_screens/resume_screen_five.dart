@@ -9,7 +9,7 @@ class ResumeScreenFive extends StatelessWidget {
   Widget build(BuildContext context) {
     var h=MediaQuery.of(context).size.height;
     var w=MediaQuery.of(context).size.width;
-    Color green= Color(0xFF00E676);
+    Color black= Colors.black;
     return Scaffold(
       backgroundColor: Color(0xFFf09e8e),
       body: Padding(
@@ -28,7 +28,7 @@ class ResumeScreenFive extends StatelessWidget {
                  height: 140,
                  decoration: BoxDecoration(
                    color: Colors.white30,
-                   border: Border.all(width: 3, color:Color(0xFF00E676)),
+                   border: Border.all(width: 3, color:black),
                    borderRadius: BorderRadius.all(Radius.circular(
                        100.0) //                 <--- border radius here
                    ),
@@ -40,21 +40,6 @@ class ResumeScreenFive extends StatelessWidget {
                        size: 100,
                      )),
                ),
-               Positioned(
-                 bottom: 30,
-              left: 110,
-                 child: Container(
-                   width: 13,
-                   height: 13,
-                   decoration: BoxDecoration(
-                      color: Colors.greenAccent[400],
-                     borderRadius: BorderRadius.all(Radius.circular(
-                         10.0) //                 <--- border radius here
-                     ),
-                   ),
-                 ),
-               ),
-
              ],
            ),
             Row(
@@ -161,7 +146,7 @@ class ResumeScreenFive extends StatelessWidget {
                         children: [
                           Row(
                             children: [
-                              Icon(Icons.call,size: 15,color: green,),
+                              Icon(Icons.call,size: 15,color: black,),
                               SizedBox(width: 15,),
                               Text("+91 7890098765",style:  GoogleFonts.zillaSlab(
                                 fontSize: 14,fontWeight: FontWeight.bold
@@ -170,7 +155,7 @@ class ResumeScreenFive extends StatelessWidget {
                           ),
                           Row(
                             children: [
-                              Icon(Icons.location_on_rounded,size: 15,color: green,),
+                              Icon(Icons.location_on_rounded,size: 15,color: black,),
                               SizedBox(width: 15,),
                               Text("Second Street Avenue 1445, Newyork",style:  GoogleFonts.zillaSlab(
                                   fontSize: 14,fontWeight: FontWeight.bold
@@ -179,7 +164,7 @@ class ResumeScreenFive extends StatelessWidget {
                           ),
                           Row(
                             children: [
-                              Icon(Icons.email,size: 15,color: green,),
+                              Icon(Icons.email,size: 15,color: black,),
                               SizedBox(width: 15,),
                               Text("xyzklmbd@gmail.com",style:  GoogleFonts.zillaSlab(
                                   fontSize: 14,fontWeight: FontWeight.bold
@@ -188,7 +173,7 @@ class ResumeScreenFive extends StatelessWidget {
                           ),
                           Row(
                             children: [
-                              FaIcon(FontAwesomeIcons.skype,size: 15,color: green,),
+                              FaIcon(FontAwesomeIcons.skype,size: 15,color: black,),
                               SizedBox(width: 15,),
                               Text("HerySmith98",style:  GoogleFonts.zillaSlab(
                                   fontSize: 14,fontWeight: FontWeight.bold
@@ -310,7 +295,8 @@ class ResumeScreenFive extends StatelessWidget {
                                 width: 150,
                                 child: Row(
                                   children: [
-                                    FaIcon(FontAwesomeIcons.language,color: green,),
+                                    FaIcon(FontAwesomeIcons.language,color: black,),
+                                    SizedBox(width: 10,),
                                     Text("English",style:  GoogleFonts.zillaSlab(),),
                                   ],
                                 ),
@@ -330,7 +316,8 @@ class ResumeScreenFive extends StatelessWidget {
                                 width: 150,
                                 child: Row(
                                   children: [
-                                    FaIcon(FontAwesomeIcons.language,color: green,),
+                                    FaIcon(FontAwesomeIcons.language,color: black,),
+                                    SizedBox(width: 10,),
                                     Text("French",style:  GoogleFonts.zillaSlab(),),
                                   ],
                                 ),
@@ -349,7 +336,8 @@ class ResumeScreenFive extends StatelessWidget {
                                 width: 150,
                                 child: Row(
                                   children: [
-                                    FaIcon(FontAwesomeIcons.language,color: green,),
+                                    FaIcon(FontAwesomeIcons.language,color: black,),
+                                    SizedBox(width: 10,),
                                     Text("Hindi",style:  GoogleFonts.zillaSlab(),),
                                   ],
                                 ),
@@ -368,7 +356,8 @@ class ResumeScreenFive extends StatelessWidget {
                                 width: 150,
                                 child: Row(
                                   children: [
-                                    FaIcon(FontAwesomeIcons.language,color: green,),
+                                    FaIcon(FontAwesomeIcons.language,color: black,),
+                                    SizedBox(width: 10,),
                                     Text("Tamil",style:  GoogleFonts.zillaSlab(),),
                                   ],
                                 ),
@@ -395,7 +384,7 @@ class ResumeScreenFive extends StatelessWidget {
                   children: [
                     Icon(Icons.circle,size:15,color:Colors.black ,),
                     SizedBox(
-                      height:310,
+                      height:330,
                       child: VerticalDivider(
                         color:Colors.black ,
                         thickness: 2,
@@ -410,7 +399,7 @@ class ResumeScreenFive extends StatelessWidget {
                   children: [
                     Text('Education',style:  GoogleFonts.zillaSlab(fontWeight: FontWeight.bold,fontSize: 20),),
                     Container(
-                      height:300,
+                      height:320,
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.spaceAround,
                         children: [
@@ -420,7 +409,7 @@ class ResumeScreenFive extends StatelessWidget {
                             children: [
                               Row(
                                 children: [
-                                  FaIcon(FontAwesomeIcons.graduationCap,size: 15,color: green,),
+                                  FaIcon(FontAwesomeIcons.graduationCap,size: 15,color: black,),
                                   SizedBox(width: 5,),
                                   Text("Lorem Ipsum (2000-2010)",style: GoogleFonts.zillaSlab(fontWeight: FontWeight.bold,fontSize: 15)),
                                 ],
@@ -428,10 +417,10 @@ class ResumeScreenFive extends StatelessWidget {
                               SizedBox(height: 8,),
                               Row(
                                 children: [
-                                  SizedBox(width: 23,),
+                                  SizedBox(width: 24,),
                                   Container(
                                     width: w*.75,
-                                    height: 50,
+                                    height: 65,
                                     child: Text("Lorem ipsum dolor sit amet, consectetur"
                                         "adipiscing elit,"
                                         "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",style:  GoogleFonts.zillaSlab(),),
@@ -445,7 +434,7 @@ class ResumeScreenFive extends StatelessWidget {
                             children: [
                               Row(
                                 children: [
-                                  FaIcon(FontAwesomeIcons.graduationCap,size: 15,color: green,),
+                                  FaIcon(FontAwesomeIcons.graduationCap,size: 15,color: black,),
                                   SizedBox(width: 5,),
                                   Text("Lorem Ipsum (2000-2010)",style: GoogleFonts.zillaSlab(fontWeight: FontWeight.bold,fontSize: 15)),
                                 ],
@@ -453,10 +442,10 @@ class ResumeScreenFive extends StatelessWidget {
                               SizedBox(height: 8,),
                               Row(
                                 children: [
-                                  SizedBox(width: 23,),
+                                  SizedBox(width: 24,),
                                   Container(
                                     width: w*.75,
-                                    height: 50,
+                                    height: 65,
                                     child: Text("Lorem ipsum dolor sit amet, consectetur"
                                         "adipiscing elit,"
                                         "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",style:  GoogleFonts.zillaSlab(),),
@@ -470,7 +459,7 @@ class ResumeScreenFive extends StatelessWidget {
                             children: [
                               Row(
                                 children: [
-                                  FaIcon(FontAwesomeIcons.graduationCap,size: 15,color: green,),
+                                  FaIcon(FontAwesomeIcons.graduationCap,size: 15,color: black,),
                                   SizedBox(width: 5,),
                                   Text("Lorem Ipsum (2000-2010)",style: GoogleFonts.zillaSlab(fontWeight: FontWeight.bold,fontSize: 15)),
                                 ],
@@ -478,10 +467,10 @@ class ResumeScreenFive extends StatelessWidget {
                               SizedBox(height: 8,),
                               Row(
                                 children: [
-                                  SizedBox(width: 23,),
+                                  SizedBox(width: 24,),
                                   Container(
                                     width: w*.75,
-                                    height: 50,
+                                    height: 65,
                                     child: Text("Lorem ipsum dolor sit amet, consectetur"
                                         "adipiscing elit,"
                                         "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",style:  GoogleFonts.zillaSlab(),),
@@ -506,7 +495,7 @@ class ResumeScreenFive extends StatelessWidget {
                   children: [
                     Icon(Icons.circle,size:15,color:Colors.black ,),
                     SizedBox(
-                      height:310,
+                      height:330,
                       child: VerticalDivider(
                         color:Colors.black ,
                         thickness: 2,
@@ -521,7 +510,7 @@ class ResumeScreenFive extends StatelessWidget {
                   children: [
                     Text('Experience',style: GoogleFonts.zillaSlab(fontWeight: FontWeight.bold,fontSize: 20),),
                     Container(
-                      height:300,
+                      height:320,
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.spaceAround,
                         children: [
@@ -531,7 +520,7 @@ class ResumeScreenFive extends StatelessWidget {
                             children: [
                               Row(
                                 children: [
-                                  FaIcon(FontAwesomeIcons.wordpress,size: 15,color: Colors.deepOrange,),
+                                  FaIcon(FontAwesomeIcons.wordpress,size: 15,color:black,),
                                   SizedBox(width: 5,),
                                   Text("Lorem Ipsum (2000-2010)",style: GoogleFonts.zillaSlab(fontWeight: FontWeight.bold,fontSize: 15)),
                                 ],
@@ -542,7 +531,7 @@ class ResumeScreenFive extends StatelessWidget {
                                   SizedBox(width: 23,),
                                   Container(
                                     width: w*.75,
-                                    height: 50,
+                                    height: 65,
                                     child: Text("Lorem ipsum dolor sit amet, consectetur"
                                         "adipiscing elit,"
                                         "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",style:  GoogleFonts.zillaSlab(),),
@@ -556,7 +545,7 @@ class ResumeScreenFive extends StatelessWidget {
                             children: [
                               Row(
                                 children: [
-                                  FaIcon(FontAwesomeIcons.wordpress,size: 15,color: Colors.deepOrange,),
+                                  FaIcon(FontAwesomeIcons.wordpress,size: 15,color:black,),
                                   SizedBox(width: 5,),
                                   Text("Lorem Ipsum (2000-2010)",style: GoogleFonts.zillaSlab(fontWeight: FontWeight.bold,fontSize: 15)),
                                 ],
@@ -567,7 +556,7 @@ class ResumeScreenFive extends StatelessWidget {
                                   SizedBox(width: 23,),
                                   Container(
                                     width: w*.75,
-                                    height: 50,
+                                    height: 65,
                                     child: Text("Lorem ipsum dolor sit amet, consectetur"
                                         "adipiscing elit,"
                                         "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",style:  GoogleFonts.zillaSlab(),),
@@ -581,7 +570,7 @@ class ResumeScreenFive extends StatelessWidget {
                             children: [
                               Row(
                                 children: [
-                                  FaIcon(FontAwesomeIcons.wordpress,size: 15,color: Colors.deepOrange,),
+                                  FaIcon(FontAwesomeIcons.wordpress,size: 15,color:black,),
                                   SizedBox(width: 5,),
                                   Text("Lorem Ipsum (2000-2010)",style: GoogleFonts.zillaSlab(fontWeight: FontWeight.bold,fontSize: 15)),
                                 ],
@@ -592,7 +581,7 @@ class ResumeScreenFive extends StatelessWidget {
                                   SizedBox(width: 23,),
                                   Container(
                                     width: w*.75,
-                                    height: 50,
+                                    height: 65,
                                     child: Text("Lorem ipsum dolor sit amet, consectetur"
                                         "adipiscing elit,"
                                         "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",style:  GoogleFonts.zillaSlab(),),
@@ -601,6 +590,7 @@ class ResumeScreenFive extends StatelessWidget {
                               )
                             ],
                           ),
+
 
                         ],
                       ),
@@ -639,7 +629,7 @@ class ResumeScreenFive extends StatelessWidget {
 
                           Row(
                             children: [
-                              FaIcon(FontAwesomeIcons.microphone,size: 15,color:green,),
+                              FaIcon(FontAwesomeIcons.microphone,size: 15,color:black,),
                               SizedBox(width: 5,),
                               Text("Lorem Ipsum",style:GoogleFonts.zillaSlab(fontWeight: FontWeight.bold,fontSize: 15)),
                               SizedBox(width: 30,),
@@ -653,7 +643,7 @@ class ResumeScreenFive extends StatelessWidget {
                           ),
                           Row(
                             children: [
-                              FaIcon(FontAwesomeIcons.book,size: 15,color:green,),
+                              FaIcon(FontAwesomeIcons.book,size: 15,color:black,),
                               SizedBox(width: 5,),
                               Text("Lorem Ipsum",style:GoogleFonts.zillaSlab(fontWeight: FontWeight.bold,fontSize: 15)),
                               SizedBox(width: 30,),
@@ -667,7 +657,7 @@ class ResumeScreenFive extends StatelessWidget {
                           ),
                           Row(
                             children: [
-                              FaIcon(FontAwesomeIcons.laptop,size: 15,color:green,),
+                              FaIcon(FontAwesomeIcons.laptop,size: 15,color:black,),
                               SizedBox(width: 5,),
                               Text("Lorem Ipsum",style:GoogleFonts.zillaSlab(fontWeight: FontWeight.bold,fontSize: 15)),
                               SizedBox(width: 30,),
@@ -681,7 +671,7 @@ class ResumeScreenFive extends StatelessWidget {
                           ),
                           Row(
                             children: [
-                              FaIcon(FontAwesomeIcons.gitAlt,size: 15,color:green,),
+                              FaIcon(FontAwesomeIcons.gitAlt,size: 15,color:black,),
                               SizedBox(width: 5,),
                               Text("Lorem Ipsum",style:GoogleFonts.zillaSlab(fontWeight: FontWeight.bold,fontSize: 15)),
                               SizedBox(width: 30,),
@@ -695,7 +685,7 @@ class ResumeScreenFive extends StatelessWidget {
                           ),
                           Row(
                             children: [
-                              FaIcon(FontAwesomeIcons.dribbble,size: 15,color:green,),
+                              FaIcon(FontAwesomeIcons.dribbble,size: 15,color:black,),
                               SizedBox(width: 5,),
                               Text("Lorem Ipsum",style:GoogleFonts.zillaSlab(fontWeight: FontWeight.bold,fontSize: 15)),
                               SizedBox(width: 30,),
@@ -709,7 +699,7 @@ class ResumeScreenFive extends StatelessWidget {
                           ),
                           Row(
                             children: [
-                              FaIcon(FontAwesomeIcons.behance,size: 15,color:green,),
+                              FaIcon(FontAwesomeIcons.behance,size: 15,color:black,),
                               SizedBox(width: 5,),
                               Text("Lorem Ipsum",style:GoogleFonts.zillaSlab(fontWeight: FontWeight.bold,fontSize: 15)),
                               SizedBox(width: 30,),

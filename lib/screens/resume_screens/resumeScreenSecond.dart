@@ -139,7 +139,7 @@ class ResumeScreenSecond extends StatelessWidget {
               ),
             ),
             SizedBox(
-              height: 10,
+              height: 25,
             ),
 
             /// Contact me

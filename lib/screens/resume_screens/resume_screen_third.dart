@@ -86,11 +86,12 @@ class ResumeScreenThird extends StatelessWidget {
           ),
           Padding(
             padding: const EdgeInsets.only(left: 15, right: 15),
-            child: Expanded(
+            child: SizedBox(
+                width:width,
                 child: Divider(
-              color: Colors.black,
-              thickness: 1,
-            )),
+                  color: Colors.black,
+                  thickness: 1,
+                )),
           ),
           Padding(
             padding:
@@ -126,11 +127,12 @@ class ResumeScreenThird extends StatelessWidget {
           ),
           Padding(
             padding: const EdgeInsets.only(left: 15, right: 15),
-            child: Expanded(
+            child: SizedBox(
+                width:width,
                 child: Divider(
-              color: Colors.black,
-              thickness: 1,
-            )),
+                  color:Colors.black,
+                  thickness: 1,
+                )),
           ),
           Padding(
             padding:
@@ -216,11 +218,12 @@ class ResumeScreenThird extends StatelessWidget {
           ),
           Padding(
             padding: const EdgeInsets.only(left: 15, right: 15),
-            child: Expanded(
+            child: SizedBox(
+                width:width,
                 child: Divider(
-              color: Colors.black,
-              thickness: 1,
-            )),
+                  color: Colors.black,
+                  thickness: 1,
+                )),
           ),
           Padding(
             padding:
@@ -310,18 +313,19 @@ class ResumeScreenThird extends StatelessWidget {
                 ),
                 Padding(
                   padding: const EdgeInsets.only(left: 15, right: 15),
-                  child: Expanded(
+                  child: SizedBox(
+                      width:width,
                       child: Divider(
-                    color: primary,
-                    thickness: 1,
-                  )),
+                        color: primary,
+                        thickness: 1,
+                      )),
                 ),
                 Padding(
                   padding: const EdgeInsets.only(
                       top: 20, left: 30, right: 30, bottom: 20),
                   child: Container(
                     width: width,
-                    height: 170,
+                    height: 150,
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -351,7 +355,7 @@ class ResumeScreenThird extends StatelessWidget {
                                   "MA GRAPHICS",
                                   style:  GoogleFonts.zillaSlab(
                                       fontWeight: FontWeight.bold,
-                                      fontSize: 18),
+                                      fontSize: 15),
                                 ),
                                 Text("ROYAL COLLEGE OF LONDON",
                                     style: TextStyle(fontSize: 13)),
@@ -387,7 +391,7 @@ class ResumeScreenThird extends StatelessWidget {
                                   "BACHELOR OF DESIGN",
                                   style:  GoogleFonts.zillaSlab(
                                       fontWeight: FontWeight.bold,
-                                      fontSize: 18),
+                                      fontSize: 15),
                                 ),
                                 Text("ROYAL COLLEGE OF LONDON",
                                     style:  GoogleFonts.zillaSlab(fontSize: 13)),
@@ -402,9 +406,7 @@ class ResumeScreenThird extends StatelessWidget {
                     ),
                   ),
                 ),
-                SizedBox(
-                  height: 20,
-                ),
+
                 Row(
                   children: [
                     SizedBox(
@@ -421,11 +423,12 @@ class ResumeScreenThird extends StatelessWidget {
                 ),
                 Padding(
                   padding: const EdgeInsets.only(left: 15, right: 15),
-                  child: Expanded(
+                  child: SizedBox(
+                      width:width,
                       child: Divider(
-                    color: primary,
-                    thickness: 1,
-                  )),
+                        color: primary,
+                        thickness: 1,
+                      )),
                 ),
                 Padding(
                   padding: const EdgeInsets.only(
@@ -462,7 +465,7 @@ class ResumeScreenThird extends StatelessWidget {
                                   "DESIGN DIRECTOR",
                                   style:  GoogleFonts.zillaSlab(
                                       fontWeight: FontWeight.bold,
-                                      fontSize: 18),
+                                      fontSize: 15),
                                 ),
                                 Text("NEW DESIGNS",
                                     style:  GoogleFonts.zillaSlab(fontSize: 13)),
@@ -498,7 +501,7 @@ class ResumeScreenThird extends StatelessWidget {
                                   "ART DIRECTOR",
                                   style:  GoogleFonts.zillaSlab(
                                       fontWeight: FontWeight.bold,
-                                      fontSize: 18),
+                                      fontSize: 15),
                                 ),
                                 Text("EVER DROP MIND",
                                     style:  GoogleFonts.zillaSlab(fontSize: 13)),
@@ -534,7 +537,7 @@ class ResumeScreenThird extends StatelessWidget {
                                   "ART DIRECTOR",
                                   style:  GoogleFonts.zillaSlab(
                                       fontWeight: FontWeight.bold,
-                                      fontSize: 18),
+                                      fontSize: 15),
                                 ),
                                 Text("UNITY GAMES",
                                     style:  GoogleFonts.zillaSlab(fontSize: 13)),
@@ -549,9 +552,7 @@ class ResumeScreenThird extends StatelessWidget {
                     ),
                   ),
                 ),
-                SizedBox(
-                  height: 20,
-                ),
+
                 Row(
                   children: [
                     SizedBox(
@@ -568,7 +569,8 @@ class ResumeScreenThird extends StatelessWidget {
                 ),
                 Padding(
                   padding: const EdgeInsets.only(left: 15, right: 15),
-                  child: Expanded(
+                  child: SizedBox(
+                    width:width,
                       child: Divider(
                     color: primary,
                     thickness: 1,

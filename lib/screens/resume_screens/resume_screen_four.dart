@@ -21,11 +21,11 @@ class ResumeScreenFour extends StatelessWidget {
             children: [
               Container(
                 width: w,
-                height: h*.78,
+                height: h*.72,
 
               ),
 
-              Positioned(child:Container(color: Colors.white,width: w,height: h*.2,)),
+              Positioned(child:Container(color: Colors.white,width: w,height: h*.13,)),
               Positioned(
                   bottom: 0,
                   child:Container(color: Colors.black,width: w,height: h*.58,
@@ -86,7 +86,7 @@ class ResumeScreenFour extends StatelessWidget {
                   ),
                   )),
               Positioned(
-                top: 45,
+               top: -10,
                 left: 10,
                 right: 10,
                 child: Padding(
@@ -103,7 +103,7 @@ class ResumeScreenFour extends StatelessWidget {
                 ),
               ),),
               Positioned(
-                  top: 270,
+                  top: 210,
                   left: 10,
                   right: 10,
                   child: Container(
